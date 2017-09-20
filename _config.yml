@@ -1,1 +1,34 @@
-theme: jekyll-theme-hacker
+theme: jelly-jekyll-theme-cayman
+<html>
+<head>
+<title>
+"Welcome to Tyler's Webpage!"
+</title>
+</head>
+<body>
+<h1>Tyler D'Silva</h1>
+<h2>Candidate for Systems Design Engineering</h2>
+<p>I am a 1A Systems Design Engineer at the University of Waterloo.  I love to apply my problem solving skills and critical thinking skills to new experiences.  I willing to learn new things 
+that are interesting and that help make an impact.  In the future, I hope to continue a career in software development and apply my knowledge to making new ideas and experiences a reality.  Currently
+I am looking for an intership to learn and apply knowledge to gain practical experience in development.<br> In my spare time, I like to learn new languages and trying to design new projects to help increase
+my exoerience.  I am very passionate and competitive about tennis, and love playing the clarinet.   
+</p>
+<h2>Education</h2>
+<p>"Education is the most powerful weapon which you can use to change the world"-Nelson Mandela</p>
+<h3>University of Waterloo</h3>
+<p>BASc, Systems Design Engineering<br>Concentration in C++</p>
+<br>
+<h3>Certifications</h3>
+<ul>
+<li>Carnegie Mellon Programming Certificate</li>
+<li>CSS Basics from W3C and Microsoft</li>
+</ul>
+<h2>Work Experience</h2>
+<p>"The only source of knowledge is experience"-Albert Einstein</p>
+<ul>
+<li>Lifeguard with Thorncrest Homes Association</li>
+<li>Tutor</li>
+<li>Detailer for Assured Automotive</li>
+</ul>
+</body>
+</html>
