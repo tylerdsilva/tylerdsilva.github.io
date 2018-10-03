@@ -4,9 +4,9 @@
 <div id="home-content" class="home-content" [ngClass]="{'home-dark': darkMode}">
   <div class="column is-mobile" id="messenger">I am life long learner with a passion for technology!
     <div class="home-content-icons">
-      <a href="https://www.linkedin.com/in/tyler-d-silva-583b66163" class="buttons" target="_blank"><i class="ion-social-linkedin"></i></a>
-      <a href="https://github.com/tylerdsilva/" class="buttons" target="_blank"><i class="ion-social-github"></i></a>
-      <a href="../../src/resume/Tyler-D'Silva-Software.pdf" class="buttons" target="_blank"><i class="ion-document"></i></a>
+      <a href="https://www.linkedin.com/in/tyler-d-silva-583b66163" class="buttons"[ngClass]="{'home-dark': darkMode}" target="_blank"><i class="ion-social-linkedin"></i></a>
+      <a href="https://github.com/tylerdsilva/" class="buttons" [ngClass]="{'home-dark': darkMode}" target="_blank"><i class="ion-social-github"></i></a>
+      <a href="../../src/resume/Tyler-D'Silva-Software.pdf" class="buttons" [ngClass]="{'home-dark': darkMode}" target="_blank"><i class="ion-document"></i></a>
     </div>
   </div>
   <div class="anim">

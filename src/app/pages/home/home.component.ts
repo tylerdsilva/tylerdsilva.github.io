@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import anime from 'animejs';
-import {UiService} from '../../../services/ui/ui.service';
+import {UiService} from "../../services/ui/ui.service"
 
 @Component({
   selector: 'app-home',
@@ -8,7 +8,7 @@ import {UiService} from '../../../services/ui/ui.service';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  constructor() { }
+  constructor(public ui: UiService) { }
 
   darkMode: boolean;
 
@@ -31,6 +31,7 @@ export class HomeComponent implements OnInit {
         autoplay: true
       });
     }
+
     this.ui.darkModeState.subscribe((isDark) => {
       this.darkMode = isDark;
     });
