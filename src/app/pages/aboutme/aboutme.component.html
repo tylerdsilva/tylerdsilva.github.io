@@ -1,0 +1,216 @@
+<div class="aboutme__wrapper">
+  <svg class="background-gradient__circle" viewBox="4572 73 1328 1328">
+    <defs *ngIf="!darksMode">
+      <linearGradient id="ddd" x2="0" y2="1" gradientUnits="objectBoundingBox">
+        <stop offset="0" stop-color="#00FF9B"/>
+        <stop offset="1" stop-color="#003EFF"/>
+      </linearGradient>
+    </defs>
+    <defs *ngIf="darksMode">
+      <linearGradient id="ddd" x2="0" y2="1" gradientUnits="objectBoundingBox">
+        <stop offset="0" stop-color="#ff8b8b"/>
+        <stop offset="1" stop-color="#6676ff"/>
+      </linearGradient>
+    </defs>
+
+    <circle cx="-50" cy="517" r="664" fill="url(#ddd)" transform="translate(4500 73)"/>
+  </svg>
+
+  <svg class="background-gradient__circle" viewBox="4572 73 1328 1328">
+    <defs>
+      <linearGradient id="ddd" x2="1" y2="20" gradientUnits="objectBoundingBox">
+        <stop offset="0" stop-color="#003EFF"/>
+        <stop offset="1" stop-color="#00FF9B"/>
+      </linearGradient>
+    </defs>
+    <circle cx="1000" cy="0" r="664" fill="url(#ddd)" transform="translate(4500 73)"/>
+  </svg>
+
+  <svg class="background-gradient__circle" viewBox="4572 73 1328 1328">
+    <defs>
+      <linearGradient id="ddd" x2="1" y2="20" gradientUnits="objectBoundingBox">
+        <stop offset="0" stop-color="#003EFF"/>
+        <stop offset="1" stop-color="#00FF9B"/>
+      </linearGradient>
+    </defs>
+    <circle cx="1800" cy="500" r="664" fill="url(#ddd)" transform="translate(4500 73)"/>
+  </svg>
+
+  <svg class="background-gradient__circle" viewBox="4572 73 1328 1328">
+    <defs>
+      <linearGradient id="ddd" x2="1" y2="20" gradientUnits="objectBoundingBox">
+        <stop offset="0" stop-color="#003EFF"/>
+        <stop offset="1" stop-color="#00FF9B"/>
+      </linearGradient>
+    </defs>
+    <circle cx="-50" cy="800" r="664" fill="url(#ddd)" transform="translate(4500 73)"/>
+  </svg>
+
+  <svg class="background-gradient__circle" viewBox="4572 73 1328 1328">
+    <defs>
+      <linearGradient id="ddd" x2="1" y2="20" gradientUnits="objectBoundingBox">
+        <stop offset="0" stop-color="#003EFF"/>
+        <stop offset="1" stop-color="#00FF9B"/>
+      </linearGradient>
+    </defs>
+    <circle cx="500" cy="1200" r="664" fill="url(#ddd)" transform="translate(4500 73)"/>
+  </svg>
+
+  <svg class="background-gradient__circle" viewBox="4572 73 1328 1328">
+    <defs>
+      <linearGradient id="ddd" x2="1" y2="20" gradientUnits="objectBoundingBox">
+        <stop offset="0" stop-color="#003EFF"/>
+        <stop offset="1" stop-color="#00FF9B"/>
+      </linearGradient>
+    </defs>
+    <circle cx="1400" cy="1000" r="664" fill="url(#ddd)" transform="translate(4500 73)"/>
+  </svg>
+
+  <svg class="back__button" *ngIf="state != 0" (click)="backClick()" viewBox="4085 152 98.5 126">
+    <defs>
+      <style>.a {
+        fill: #2b244d;
+      }
+      .b {
+        fill: rgba(0, 0, 0, 0);
+      }
+      .b, .c {
+        stroke: #fff;
+        stroke-width: 2px;
+      }
+      .c {
+        fill: none;
+      }
+      .d {
+        fill: #fff;
+        font-size: 15px;
+        font-family: SegoeUI, Segoe UI;
+        letter-spacing: 0.4em;
+      }</style>
+    </defs>
+    <g transform="translate(3980)">
+      <circle class="a" cx="39" cy="39" r="39" transform="translate(105 152)"/>
+      <line class="b" x1="80" transform="translate(123.5 190.5)"/>
+      <line class="b" y1="26" x2="26" transform="translate(123.5 164.5)"/>
+      <line class="c" x1="26" y1="27" transform="translate(123.5 190.5)"/>
+      <text class="d" transform="translate(117 274)">
+        <tspan x="0" y="0">BACK</tspan>
+      </text>
+    </g>
+  </svg>
+
+  <div class="aboutme__modalwrapper">
+    <section class="modal__header">
+        <h1 *ngIf="state === 0" class="modal__title">ABOUT ME</h1>
+        <h1 *ngIf="state === 1" class="modal__title">TECHNOLOGY</h1>
+        <h1 *ngIf="state === 2" class="modal__title">SPORTS</h1>
+        <h1 *ngIf="state === 3" class="modal__title">MUSIC</h1>
+        <h1 *ngIf="state === 4" class="modal__title">SOCCER</h1>
+        <h1 *ngIf="state === 5" class="modal__title">TENNIS</h1>
+        <h1 *ngIf="state === 6" class="modal__title">HOCKEY</h1>
+        <h1 *ngIf="state === 7" class="modal__title">TAEKWONDO</h1>
+    </section>
+    <main class="modal__content">
+      <div *ngIf="state === 0">
+      <h1>I am a 2A Systems Design Engineer at the University of Waterloo. I love to apply my problem solving and critical thinking skills to new experiences. I am willing to learn new things that are interesting and that help make an impact. In the future, I hope to continue a career in software development and apply my knowledge to making new ideas and experiences a reality. Currently, I am looking for an intership to learn and apply knowledge and gain practical experience in development.
+In my spare time, I like to learn new languages and trying to design new projects to help increase my experience. For extracurricular activities, I am very passionate and competitive about tennis, and love playing the clarinet.</h1>
+      <div *ngIf="state === 0" class="modal__container">
+      <section class="modal__card" (click)="techOnClick()">
+          <h1>TECHNOLOGY</h1>
+          <img class="modal__images" src="src/images/technology.png">
+        </section>
+        <section class="modal__card" (click)="sportsOnClick()">
+          <h1>SPORTS</h1>
+          <img class="modal__images" src="src/images/sports.jpg">
+        </section>
+        <section class="modal__card" (click)="musicOnClick()">
+          <h1>MUSIC</h1>
+          <img class="modal__images" src="src/images/music.jpg">
+        </section>
+      </div>
+    </div>
+
+    <div *ngIf="state === 1">
+      <ul>
+        <li class="technology-list">- I started to code when I was introduced to Vex Robotics through the team and courses</li>
+        <li class="technology-list">- In Vex Robotics, we are tasked to design robots to fulfill a various challenge, and to compete against other robots</li>
+        <li class="technology-list">- My first year I completed the challenge “Nothing But Net” in which we shoot balls into nets, we made it to Provincials.  The next challenge was “Starstruck” which we throw stars and cubes over a wall and get our robots to hang</li>
+        <li class="technology-list">- I was one of the teams coders and learned many software and engineering concepts</li>
+        <li class="technology-list">- From these experiences, I started to take online courses to develop my first website using HTML and CSS</li>
+        <li class="technology-list">- I have gone forward with taking university courses such as Digital Computation in C++ and applying my knowledge through coop experiences and projects</li>
+        <li><b>Certifications: </b><u class="certification-click" (click)="robotC()">RobotC for VEX Programming from Carnegie Mellon University</u> , <u class="certification-click" (click)="cssBasic()">W3C CSS Basics</u></li>
+      </ul>
+      <div class="robotwrapper">
+        <img src="src/images/Robot.jpg" alt="src/images/technology.png" class="robot">
+        <img src="src/images/web1.JPG" alt="src/images/Robot.jpg" class="robot">
+      </div>
+    </div>
+
+    <div *ngIf="state === 2">
+      <ul>
+        <li class="technology-list">I have played many sports throughout my life, they teach me teamwork and how to be competitive</li>
+        <li class="technology-list">These are the sports I currently do:</li>
+        <div *ngIf="state === 2" class="sports__container">
+        <section class="modal__card" (click)="soccerOnClick()">
+            <h1>SOCCER</h1>
+            <img class="modal__images" src="src/images/soccer.png">
+          </section>
+          <section class="modal__card" (click)="hockeyOnClick()">
+            <h1>HOCKEY</h1>
+            <img class="modal__images" src="src/images/hockey.jpg">
+          </section>
+          <section class="modal__card" (click)="tennisOnClick()">
+            <h1>TENNIS</h1>
+            <img class="modal__images" src="src/images/tennis.gif">
+          </section>
+          <section class="modal__card" (click)="tkdOnClick()">
+            <h1>TAEKWONDO</h1>
+            <img class="modal__images" src="src/images/taekwondo.jpg">
+          </section>
+        </div>
+      </ul>
+    </div>
+
+    <div *ngIf="state === 3">
+      <ul>
+        <li class="technology-list">- Music has been a big part of my life</li>
+        <li class="technology-list">- I completed my Grade 6 piano and moved on to the clarinet in high school</li>
+        <li class="technology-list">- I participated in the Etobicoke Youth Band for two years, a senior Community band that one auditions for</li>
+        <li class="technology-list">- We played an enriched repertoire of music and received first place at the Kiwanis Music Festival</li>
+        <li class="technology-list">- I was selected as a sectional leader in the Grade 10 trip band, which performed at many schools, and community centres in Chicago</li>
+      </ul>
+    </div>
+
+    <div *ngIf="state === 4">
+      <ul>
+      <li class="technology-list">- I have played soccer for more than 15 years, I played house league soccer for many years during the summer while growing up</li>
+      <li class="technology-list">- Playing soccer taght me teamwork, the competitive edge and to helped me stay active</li>
+      <li class="technology-list">- I continue to do it as an intramural sport at UW</li>
+    </ul>
+    </div>
+
+    <div *ngIf="state === 5">
+      <ul>
+      <li class="technology-list">- I do tennis lessons every summer, every day since I was 9 years old at Thorncrest Community Village</li>
+      <li class="technology-list">- As I first picked up a racquet I have loved the game and in high school started to play it throughout the winter at Eglington Flats</li>
+    </ul>
+    </div>
+
+    <div *ngIf="state === 6">
+      <ul>
+        <li class="technology-list">- I have played house league hockey for a number of years starting from the age of 7 yrs old</li>
+        <li class="technology-list">- Playing the game has taught me teamwork, determination, and commitment</li>
+        <li class="technology-list">- Recently, I have switched to ball hockey and play in the Goan Hockey Leauge</li>
+      </ul>
+    </div>
+
+    <div *ngIf="state === 7">
+      <ul>
+        <li class="technology-list">- The newest sport I've taken up is a martial art</li>
+        <li class="technology-list">- It is a martial art of discipline, skill, and technique</li>
+        <li class="technology-list">- I am practicing taekwondo during my coop terms</li>
+      </ul>
+    </div>
+    </main>
+  </div>
+</div>

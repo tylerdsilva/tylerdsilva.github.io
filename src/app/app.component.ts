@@ -8,12 +8,14 @@ import {UiService} from './services/ui/ui.service';
 })
 export class AppComponent implements OnInit {
   title = 'my-website';
+  Width = window.screen.width;
   showMenu = false;
   darkModeActive: boolean;
 
   constructor(public ui: UiService){}
 
   ngOnInit() {
+    window.scrollTo(0,0);
     this.ui.darkModeState.subscribe((value)=>{
       this.darkModeActive = value;
     });

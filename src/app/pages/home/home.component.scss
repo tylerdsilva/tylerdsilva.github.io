@@ -1,42 +1,60 @@
-#messenger {
+#about-me {
   position: relative;
-  margin-top:100px;
-  left: 23%;
-  font-family: monospace;
-  font-size: 25px;
-  white-space: nowrap;
-  text-shadow: 0 2px 2px rgba(#000, 0.9);
+  height: 100vh;
+  width: 100vw;
+}
+
+#experiences {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+#projects {
+  position: relative;
+  height: 95vh;
+  width: 100vw;
+}
+
+#messenger {
+  text-align: center;
+    position: relative;
+    color: #4a4a4a;
+    margin-top: 100px;
+    font-family: monospace;
+    font-size: 25px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.9);
+    padding-bottom: 38px;
 }
 .home-dark {
   color:#FFF !important;
 }
+.arrow-dark {
+  color:#FFF;
+  .arrow-down::after {
+    border-right-color: #FFF !important;
+    border-bottom-color: #FFF !important;
+  }
+}
 .home-content {
-  display: flex;
-  padding-top:50px;
-  justify-content: center;
-  position: absolute;
-  overflow: hidden;
-  width: 100vw;
-  height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 95vh;
 }
 .home-content-icons{
-  margin-left:220px;
   margin-top: 20px;
-}
-.anim, .anim {
-  width: 50%;
-  right: 209px;
-  height:0;
+  padding-left: 70px;
 }
 .svg_animation {
-  position: relative;
-width: 100%;
-right: 209px;
-height: 500px;
-top: 246px;
+  width: 100%;
+  height: 500px;
 }
-.anim path {
-  stroke-width: 2;
+.animation {
+  display: flex;
+  flex-grow: 2;
+  position: relative;
 }
 .buttons {
   display: unset;
@@ -55,6 +73,9 @@ a.buttons:hover {
 }
 .ion-document{
   font-size: 35px;
+}
+.icons {
+  text-align: center;
 }
 .home-content-arrow{
   position: absolute;
@@ -81,101 +102,114 @@ body {
   width: 100%;
   height: 100%;
 }
-.anim, .anim svg {
-  position: relative;
-}
-.anim path {
-  stroke-width: 2;
-}
 
 #arrow-down {
-    position: absolute;
-    left: 50%;
-    font-size: 40px;
-    bottom: 20px;
+  position: absolute;
+  left: 50%;
+  font-size: 40px;
+  bottom: 20px;
 
 }
 
 
 /* ----------------------------
-    Header Icon Hover Effects
+Header Icon Hover Effects
 -------------------------------- */
 
 .buttons {
-    animation: btn 5s 1;
+  animation: btn 5s 1;
 }
 
 
 
 @keyframes btn {
-    0% {
-        color: transparent;
-        background-color: transparent;
-        color: transparent;
-        margin-bottom: 20px;
-        border: 1px solid transparent;
-    }
-    30% {
-        color: transparent;
-        background-color: .4;
-        border: 1px solid transparent;
-        margin-bottom: 125px;
-    }
-    85% {
-        margin-bottom: 20px;
-    }
+  0% {
+    color: transparent;
+    background-color: transparent;
+    color: transparent;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+  }
+  30% {
+    color: transparent;
+    background-color: .4;
+    border: 1px solid transparent;
+    margin-bottom: 125px;
+  }
+  85% {
+    margin-bottom: 20px;
+  }
 }
 
 
 .buttons:link,
 .buttons:visited {
-    border: 1px solid transparent;
-    color: black;
-    transition: background-color 0.2s, color 0.2s;
+  border: 1px solid transparent;
+  color: #4a4a4a;
+  transition: background-color 0.2s, color 0.2s;
 }
 
 .buttons:hover,
 .buttons:active {
-    border: 1px solid transparent;
-    color: #5cbdaa;
-    background-color: transparent;
+  border: 1px solid transparent;
+  color: #5cbdaa;
+  background-color: transparent;
 }
 
-#arrow-down {
-    animation: down 4s 1;
+.arrow-down {
+  margin: 0 auto;
+  text-align: center;
 }
 
-@keyframes down {
-    0% {
-        color: transparent;
-        background-color: transparent;
-        color: transparent;
-        margin-bottom: 20px;
-        border: 1px solid transparent;
-    }
-    30% {
-        color: transparent;
-        background-color: .4;
-        border: 1px solid transparent;
-        margin-bottom: 125px;
-    }
-    85% {
-        margin-bottom: 0px;
-    }
+.arrow-down::after {
+  content:"";
+  width:10px;
+  height:10px;
+  position: absolute;
+  margin-top: 764px !important;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right:0;
+  left: 0;
+  border-right: 4px solid black;
+  border-bottom: 4px solid black;
+  -webkit-transform: rotate(45deg);
+  transform:rotate(45deg);
+  -webkit-animation: 3s arrow infinite ease;
+  animation: 3s arrow infinite ease;
 }
 
+@-webkit-keyframes arrow {
+  0%, 100% {
+    top: 50px;
+  }
+  50% {
+    top: 80px;
+  }
 
-#arrow-down:link,
-#arrow-down:visited {
-    border: 1px solid transparent;
-    color: black;
-    transition: background-color 0.2s, color 0.2s;
 }
 
+.white-arrow-down {
+  margin: 0 auto;
+  text-align: center;
+}
 
-#arrow-down:hover,
-#arrow-down:active {
-    border: 1px solid transparent;
-    color: #5cbdaa;
-    background-color: transparent;
+.white-arrow-down::after {
+  content:"";
+  width:10px;
+  height:10px;
+  position: absolute;
+  margin-top: 704px !important;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right:0;
+  left: 0;
+  border-right: 4px solid #FFF;
+  border-bottom: 4px solid #FFF;
+  -webkit-transform: rotate(45deg);
+  transform:rotate(45deg);
+  -webkit-animation: 3s arrow infinite ease;
+  animation: 3s arrow infinite ease;
 }

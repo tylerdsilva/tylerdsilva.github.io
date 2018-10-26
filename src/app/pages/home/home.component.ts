@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import anime from 'animejs';
-import {UiService} from "../../services/ui/ui.service"
+import {UiService} from "../../services/ui/ui.service";
 
 @Component({
   selector: 'app-home',
@@ -11,10 +11,16 @@ export class HomeComponent implements OnInit {
   constructor(public ui: UiService) { }
 
   darkMode: boolean;
+  innerWidth:number = 0;
 
-
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    this.innerWidth = window.innerWidth;
+  }
 
   ngOnInit() {
+    window.scrollTo(0,0);
+    this.innerWidth = window.innerWidth;
     var pathEls = document.querySelectorAll('path');
     for (var i = 0; i < pathEls.length; i++) {
       var pathEl = pathEls[i];

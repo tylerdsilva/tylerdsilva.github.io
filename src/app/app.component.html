@@ -17,9 +17,9 @@
 
     <!-- Tabs -->
     <header class="main__header">
-      <div class="navbar-brand columns">
-        <a class="navbar-item column logo-tjd" [class.hidden] = "darkModeActive">
-          <img class="center-text"  href="https://tylerdsilva.github.io/" src="src/images/Capture.JPG">
+      <div class="navbar-brand columns is-mobile">
+        <a class="navbar-item column logo-tjd" [class.hidden] = "darkModeActive" href="#home-content">
+          <img class="center-text" src="src/images/Capture.JPG">
         </a>
         <h3 class="navbar-item column title" [class.colorchange]="darkModeActive" [class.textalignment]="darkModeActive">
           TYLER D'SILVA
@@ -30,13 +30,13 @@
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
         </a>
-        <div class="navbar-menu column">
+        <div *ngIf="Width > 1024" class="navbar-menu column">
           <div class="navbar-end">
             <div class="navbar-item">
               <div class="field is-grouped">
-                <a class="mode-toggle__text control" [class.colorchange]="darkModeActive">About Me</a>
-                <a class="mode-toggle__text control" [class.colorchange]="darkModeActive">Experience</a>
-                <a class="mode-toggle__text control" [class.colorchange]="darkModeActive">Projects</a>
+                <a class="mode-toggle__text control" [class.colorchange]="darkModeActive" href="#about-me">About Me</a>
+                <a class="mode-toggle__text control" [class.colorchange]="darkModeActive" href="#experiences">Experience</a>
+                <a class="mode-toggle__text control" [class.colorchange]="darkModeActive" href="#projects">Projects</a>
                 <a class="mode-toggle__text control" [class.colorchange]="darkModeActive" target="_blank" href="src/resume/Tyler-D'Silva-Software.pdf">Resume</a>
                 <div class="mode-toggle__container">
                   <span class="mode-toggle__text control" [class.colorchange]="darkModeActive">Light</span>
@@ -59,8 +59,8 @@
 
     </header>
 
-    <!-- </nav>
-  </header> -->
+    </nav>
+  </header>
 
   <main class="main__container">
     <div class="main-container__bg" [ngClass]="{'main-container__bg-dark': darkModeActive}"></div>
