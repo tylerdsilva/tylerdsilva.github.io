@@ -83,6 +83,9 @@ grid-template-rows: repeat(auto-fill, 1fr);
 align-items: center;
 justify-items: center;
 height: 372px;
+:hover {
+  transform: scaleY(1.05);
+}
 }
 
 .sports__container {
@@ -108,6 +111,10 @@ height: 372px;
   background-color: #fff;
   border-radius: 1.75rem;
   animation: 1.25s ease-in-out fadein;
+
+  :hover {
+    transform: none;
+  }
 }
 
 .modal__images {
