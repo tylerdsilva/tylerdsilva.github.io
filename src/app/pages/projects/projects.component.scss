@@ -157,6 +157,10 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
    transition-delay: 0.15s;
 }
 
+.image {
+  object-fit: cover;
+}
+
 
 @media (max-width: 1000px) {
   .wrap {
